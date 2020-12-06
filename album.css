@@ -1,0 +1,89 @@
+/* Album card */
+
+.col-album {
+    line-height: 150%;
+}
+
+.album-card {
+    width: 190px;
+    height: 190px;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 5%;
+    color: #ffffff;
+    font-family: Arial sans-serif;
+    cursor: pointer;
+}
+
+.bgnd{
+    background-image: url("https://picsum.photos/250");
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.album-card .bgnd .overlay {
+    height: 100%;
+    /* background: rgb(0, 0, 0); */
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.album-card:hover .bgnd, .album-card:focus .bgnd {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.album-card:hover .bgnd:before, .album-card:focus .bgnd:before{
+    display: block;
+}
+
+.bgnd:before{
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.col-album a {
+    color: #000000;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.col-album .title .title {
+    font-weight: 400;
+}
+
+.col-album .title .title:hover {
+    outline: 0;
+    color: blueviolet;
+}
+
+.col-album .artist .title{
+    font-weight: 400;
+    color: #888;
+}
+
+.col-album .artist .title:hover {
+    outline: 0;
+    color: blueviolet;
+}
+
+/* Album card end */
