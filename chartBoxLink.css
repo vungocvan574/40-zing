@@ -1,0 +1,67 @@
+/* chartBox card */
+
+.col-chartBox {
+    line-height: 150%;
+}
+
+.chartBox-card {
+    display: flex;
+    width: 15em;
+    height: 4em;
+    background-color: #ddd;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    border-radius: 5px;
+    color: #ffffff;
+    font-family: Arial sans-serif;
+    cursor: pointer;
+    /* align-items: center; */
+}
+
+.bgnd{
+    width: 100%;
+    background-image: url("./sources/img/mv-vn-2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    transition: all .5s;
+}
+
+.chartBox-2{background-image: url("./sources/img/web_song_kpop.png");}
+.chartBox-3{background-image: url("./sources/img/web_song_usuk.png");}
+
+.chartBox-card .bgnd .overlay {
+    height: 100%;
+    /* background: rgb(0, 0, 0); */
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+}
+
+.chartBox-card:hover .bgnd, .chartBox-card:focus .bgnd {
+    -ms-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    transform: scale(1.2);
+}
+
+.chartBox-card:hover .bgnd:before, .chartBox-card:focus .bgnd:before{
+    display: block;
+}
+
+.bgnd:before{
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* chartBox card end */
