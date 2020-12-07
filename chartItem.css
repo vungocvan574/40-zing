@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .chart-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .chart-item .rank {
+    font-size: 20px;
+    padding: 0 8px;
+  }
+  
+  .chart-item .info {
+    font-size: 14px;
+    flex-grow: 1;
+  }
+  
+  .chart-item .song-title {
+    margin-bottom: 8px;
+  }
+  
+  .chart-item .singer {
+    font-size: 12px;
+    color: #999;
+  }
+  
+  .chart-item .view-count {
+    font-size: 13px;
+    color: #999;
+  }
+  
+  /* 26 */
+  
+  .album-cover {
+    width: 128px;
+    height: 128px;
+    background-color: #ddd;
+    background-image: url(https://via.placeholder.com/150px);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+  }
+  
+  .album-overlay {
+    height: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0) 100%);
+  }
